@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// 引入vuex文件
 import store from './vuex'
 
 Vue.config.productionTip = false
@@ -12,6 +13,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  // 挂载store
   store,
   template: '<App/>',
   components: { App }

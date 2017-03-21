@@ -16,15 +16,10 @@
     },
     methods: {
       ...mapActions([
-          'increment'
-      ]),
-      ...mapActions([
-          'decrement'
+          'decrement',
+          'increment' // 映射 this.increment() 为 this.$store.dispatch('increment')
       ])
-    },
-//    computed: mapState([
-//        'count'
-//    ])
+    }
   }
 </script>
 
